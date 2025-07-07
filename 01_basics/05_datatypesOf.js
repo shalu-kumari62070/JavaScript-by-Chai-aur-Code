@@ -43,3 +43,33 @@ const myFunction = function(){
 }
 console.log(typeof myFunction);  // function
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// ************************************************************************
+//   Stack(Primitive data type) and Heap memory(Non-Primitive datatype)
+// for stack we give copy 
+// for heap we give reference 
+
+let originalName ="Ram";
+
+let anothername = originalName;
+console.log(anothername); // output = Ram
+// now we change the value of anothername 
+anothername = "Shyam";
+
+console.log(originalName);  // output = Ram
+console.log(anothername);   // output = Shyam
+
+// for heap memory example
+let ob1 = {
+    EmailID : "user@gamil.com",
+    upi : "user@ybl"
+}
+ console.log(ob1.EmailID);  // output = user@gamil.com
+
+let ob2 = ob1;
+console.log(ob2.EmailID);  // output = user@gamil.com
+
+ob2.EmailID = "new@gamil.com";
+console.log(ob2.EmailID);    // output = new@gamil.com
+console.log(ob1.EmailID);   // output = new@gamil.com
+ 
