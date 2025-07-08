@@ -12,32 +12,32 @@ console.log(game);
 console.log(game[1]);
 console.log(game.__proto__);
 
-console.log(game.length);
+console.log(game.length);   
 console.log(game.toUpperCase());
-console.log(game.charAt(2));
-console.log(game.indexOf('o'));
+console.log(game.charAt(2));  // output = l
+console.log(game.indexOf('o'));  // output = 3
 
 // const newstr = game.substring(0,4);
-// console.log(newstr);
+// console.log(newstr);  
 // or
-console.log(game.substring(0,4));
+console.log(game.substring(0,4));  // output = I lo
 
 // in slice we give negative value
-console.log(game.slice(-4));
+console.log(game.slice(-4));   // output = ding
 
 // now we use trim method
 const str = "      xyz     w";
-console.log(str);
-console.log(str.trim());
+console.log(str);   
+console.log(str.trim());   
 
 // replace method
 const url = "https://hitesh.com/hitesh%20choudhary";
-console.log(url.replace('%20', '-'));
+console.log(url.replace('%20', '-'));  // output =   https://hitesh.com/hitesh-choudhary
 
 // include method
-console.log(url.includes("hitesh"));
-console.log(url.includes("hhh"));
+console.log(url.includes("hitesh"));  // output =  true
+console.log(url.includes("hhh"));   // output = false
 
 // split method
 const s1 = "hello-hii-how";
-console.log(s1.split('-'));
+console.log(s1.split('-'));  // output =  [ 'hello', 'hii', 'how' ]
