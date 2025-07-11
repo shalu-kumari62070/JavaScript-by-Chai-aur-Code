@@ -1,4 +1,3 @@
-// node 01_basics/08_Date_and_time.js
 let mydate = new Date();
 // console.log(mydate.toString());  // output = Fri Jul 11 2025 13:29:57 GMT+0000 (Coordinated Universal Time)
 // console.log(mydate.toDateString());   // output = Fri Jul 11 2025
