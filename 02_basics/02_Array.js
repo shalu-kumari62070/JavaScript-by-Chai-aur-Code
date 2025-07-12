@@ -1,25 +1,23 @@
 const fruit = ["apple", "banana", "cherry"];
 const color = ["red", "yellow", "green"];
+fruit.push(color);
 
-//  node 02_basics/02_Array.js
-// fruit.push(color);
-
-// console.log(fruit);        // [ 'apple', 'banana', 'cherry', [ 'red', 'yellow', 'green' ] ]
-// console.log(fruit[3]);     // [ 'red', 'yellow', 'green' ]
-// console.log(fruit[3][2]);  // green
+console.log(fruit);        // [ 'apple', 'banana', 'cherry', [ 'red', 'yellow', 'green' ] ]
+console.log(fruit[3]);     // [ 'red', 'yellow', 'green' ]
+console.log(fruit[3][2]);  // green
 
 // concationation return new array
-// const all = fruit.concat(color);
-// console.log(all);   // [ 'apple', 'banana', 'cherry', 'red', 'yellow', 'green' ]
+const all = fruit.concat(color);
+console.log(all);   // [ 'apple', 'banana', 'cherry', 'red', 'yellow', 'green' ]
 
 // add by using spread method
-// const allnew = [...fruit, ...color];
-// console.log(allnew);  // [ 'apple', 'banana', 'cherry', 'red', 'yellow', 'green' ]
+const allnew = [...fruit, ...color];
+console.log(allnew);  // [ 'apple', 'banana', 'cherry', 'red', 'yellow', 'green' ]
 
-// const anotherarr = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
+const anotherarr = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]];
 
-// const realarr= anotherarr.flat(Infinity);
-// console.log(realarr); 
+const realarr= anotherarr.flat(Infinity);
+console.log(realarr); 
 // output = [
 //   1, 2, 3, 4, 5,
 //   6, 7, 6, 7, 4,
