@@ -8,10 +8,10 @@ const my = Symbol("hello");
 const jsuser = {
     name : "abc",
     // here name is treated as String (means ("name") ny compiler)
-    "full name" : "abcxyz";
+    "full name" : "abcxyz",
     // here we give anything in the place of name(like - 1, 2, etc);
     age : 20,
-    location : Lucknow,
+    location : "Lucknow",
     eamil : "abc@gamil.com",
     isloggedIn : false,
     lastLoginDays : ["Monday", "Saturaday"],
