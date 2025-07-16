@@ -1,15 +1,15 @@
 // here we discuss about Singleton Object or with the help of constructor
 const tinderuser = new Object();  // this is singleton Object
-console.log(tinderuser) // output = {}
+// console.log(tinderuser) // output = {}
 
 const user = {};  // this is non-singleton Object
-console.log(user);  // output = {}
+// console.log(user);  // output = {}
 
 user.id = "123abc";
 user.name = "Sammy";
 user.isloggedIn = false;
 
-console.log(user);  // { id: '123abc', name: 'Sammy', isloggedIn: false }
+// console.log(user);  // { id: '123abc', name: 'Sammy', isloggedIn: false }
 
 // here write nested object 
 const regularuser = {
@@ -69,3 +69,35 @@ console.log(Object.entries(regularuser)); // [ [ 'email', 'some@gmail.com' ], [ 
 
 console.log(user.hasOwnProperty('id'));  // true
 console.log(user.hasOwnProperty('ided'));  // false
+
+
+// *************************Object de-structure and JSON API intro *************************************************************************
+const course = {
+    coursename : "js in hindi",
+    price : "9999",
+    courseInstructor : "hitesh",
+}
+// another way to access value
+
+const {courseInstructor} = course;
+console.log(courseInstructor);
+
+const {courseInstructor : teacher} = course;
+// here we rename the courseInstructor (teacher)
+// console.log(teacher);
+
+// JSON
+// note : in JSON key and value both are in the string form
+{
+    coursename : "js in hindi",
+    price : "9999",
+    courseInstructor : "hitesh",
+}
+// note some time we take API in the form of Array and Object
+[
+    {},
+    {},
+    {}
+]
+//  here use random user me api 
+// json formatter tool
