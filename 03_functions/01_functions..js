@@ -1,17 +1,17 @@
 function addTwoNumber(num1, num2){  // num1 and num2 are Parameters
   console.log(`sum = ${num1+num2}`);
 }
-// addTwoNumber();         // sum = NaN
-// addTwoNumber(10,20);  // sum = 30
-// //  10, 20 are arguments
-// addTwoNumber(30,29); // sum = 59
-// addTwoNumber(3, "4");  // sum = 34
-// addTwoNumber("4", 5);  // sum = 45
-// addTwoNumber(3,"a");  // sum = 3a
-// addTwoNumber("a",4);  // sum = a4
-// addTwoNumber(2,2.3);  // sum = 4.3
-// addTwoNumber(4);      // sum = NaN
-// addTwoNumber(3, null); // sum = 3
+addTwoNumber();         // sum = NaN
+addTwoNumber(10,20);  // sum = 30
+//  10, 20 are arguments
+addTwoNumber(30,29); // sum = 59
+addTwoNumber(3, "4");  // sum = 34
+addTwoNumber("4", 5);  // sum = 45
+addTwoNumber(3,"a");  // sum = 3a
+addTwoNumber("a",4);  // sum = a4
+addTwoNumber(2,2.3);  // sum = 4.3
+addTwoNumber(4);      // sum = NaN
+addTwoNumber(3, null); // sum = 3
 
 // store value with the help of variable
 const result = addTwoNumber(10, 10);  // sum = 20
