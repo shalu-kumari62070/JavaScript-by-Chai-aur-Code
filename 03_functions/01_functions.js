@@ -18,8 +18,6 @@ const result = addTwoNumber(10, 10);  // sum = 20
 console.log(`Result = ${result}`);  // Result = undefined 
 // here we don't return any value so when we print result so output = undefined
 
-// node 03_functions/01_functions.js
-
 // if you don't want to receive undefined we have to return value
 function add(num1, num2){
     let result = num1 + num2;
