@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>hello world</h1>
+    <button id="Stop">Stop</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, fugiat!</p>
+    <button id="para">here we click</button>
+</body>
+
+<script>
+    // handler means Reference dena (means function ko kisi variable me store kare ke variable ko dena function ko call nhi karna)
+    setTimeout(function(){  
+        console.log("this is setTimeout");
+    }, 2000);// ye API ko v call karta hai
+    // or
+    const sayhello = function(){  
+        console.log("Hello, How are you");
+    }
+    setTimeout(sayhello, 1000);
+
+    // here we change h1 name
+    const changeText = function(){
+        document.querySelector("h1").innerHTML = "best js series";
+    }
+    setTimeout(changeText, 2000);
+    
+    // when we want to stop setTimeout we use clearTimeout and we pass refernce of setTimeout
+    const changePara = function(){
+        document.querySelector('p').innerHTML = "this is paragraph";
+    }
+    const changeme = setTimeout(changePara, 2000);
+    document.querySelector('#para').addEventListener('click', function(){
+        clearTimeout(changeme);
+        console.log("here when we click on button paragraph value doest not change");
+    })
+</script>
+</html>

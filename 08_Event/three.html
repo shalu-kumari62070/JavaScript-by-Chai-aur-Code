@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JavaScript </h1>
+    <button id="Start"> Start </button>
+    <button id="Stop"> Stop </button>
+</body>
+<script>
+    setInterval(function(){
+        console.log("Shalu"); // ye again and again print hoga(automatic) lekin same line me because we use setInterval
+    },2000);
+
+    setInterval(function(){
+        console.log("Shalu", Date.now()); // ye again and again print hoga(automatic) lekin new line me because we use setInterval
+    },2000);
+
+    const sayDate = function(){
+        console.log("Shalu", Date.now());
+    }
+    // setInterval(sayDate, 1000);
+
+    // here we pass parameter
+    const sayHello = function(str){
+        console.log(str, Date.now());
+    }
+    // setInterval(sayHello, 1000, "hello world");
+
+    // for stop setInterval we use clearInterval
+    const hii = function(){
+        console.log()
+    }
+
+</script>
+
+</html>

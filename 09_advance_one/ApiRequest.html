@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+
+<script>
+    const requestUrl = 'https://api.github.com/users/hiteshchoudhary';
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl);  // ise continuous track nhi hota hai but humne yaha request send ki hai
+    xhr.onreadystatechange = function (){  // onreadystatechange is use for continuous track
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText);
+            console.log(typeof data); // object ho  jayega kyuki humne string ko Object me parseor JSON ki help se convert kiya hai
+            console.log(data.followers);
+        }
+    }
+    xhr.send();
+</script>
+</html>
