@@ -11,7 +11,7 @@ for (const i of greet) {
 }
 
 // Map is Object that holds key-value pairs and remembers the original insertion of the keys. Map does not contain dublicate value.
-// Map is not ietrable so we can not use forin loop on Map
+// Map is not iterable so we can not use forin loop on Map
 const m = new Map();
 m.set('IN', "India");
 m.set('USA', "United States of America");
